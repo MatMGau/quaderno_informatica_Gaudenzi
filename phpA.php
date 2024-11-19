@@ -3,6 +3,7 @@
 <head>
     <cx meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>esA</title>
 </head>
 <body>
@@ -43,5 +44,7 @@
         echo "</table>";
         ?>
     </table>
+ <br>
+ <a href="php.html" class="button"> <--- go back</a>
 </body>
 </html>

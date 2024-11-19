@@ -2,6 +2,8 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+
     <title>Postback in PHP</title>
 </head>
 <body>
@@ -52,6 +54,8 @@
             <br>
             
             <button type="submit">Crea tabella</button>
+            <br>
+            <a href="php.html" class="button"> <--- go back</a>
         </form>
         <?php
     }

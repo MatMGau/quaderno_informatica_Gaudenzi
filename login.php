@@ -1,3 +1,4 @@
+
 <?php
 //$username = $_POST['nomeutente'];
 //$passwd = $_POST['password'];
@@ -23,6 +24,7 @@ if($username=="ciao" && $passwd=="ciao") {
   <h3>Pagina di login</h3>
   
   <?=$msg?>
-
+<br>
+  <a href="phpA2.html" class="button"> <--- go back</a>
 </body>
 </html>

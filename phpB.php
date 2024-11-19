@@ -3,6 +3,7 @@
 <head>
     <cx meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>orario</title>
 </head>
 <body>
@@ -32,4 +33,6 @@
     echo "<p>stai usando il browser $browser</p>";
     ?>
 </body>
+<br>
+<a href="php.html" class="button"> <--- go back</a>
 </html>

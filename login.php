@@ -1,7 +1,6 @@
 
 <?php
-//$username = $_POST['nomeutente'];
-//$passwd = $_POST['password'];
+
 $username = $_REQUEST['username'];
 $passwd = $_REQUEST['password'];
 

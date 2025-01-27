@@ -3,7 +3,7 @@
 $credentials = [
 
     // (chiave) username => (valore) password
-    'ciao' => 'ciao' 
+    'user' => 'pass' 
 ];
 
 $username = $_REQUEST['username'];

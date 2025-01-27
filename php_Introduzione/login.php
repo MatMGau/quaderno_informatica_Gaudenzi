@@ -4,11 +4,11 @@
 $username = $_REQUEST['username'];
 $passwd = $_REQUEST['password'];
 
-echo "Username: $username<br />";
+echo "username: $username<br />";
 echo "Password: $passwd<br />";
 
 if($username=="ciao" && $passwd=="ciao") {
-  $msg = "Attenzione credenziali non corrette";"Benvenuto $username nella pagina riservata del sito!";
+  $msg = "Benvenuto $username nella pagina riservata del sito!";
 }
  else {
   $msg = "Attenzione credenziali non corrette";

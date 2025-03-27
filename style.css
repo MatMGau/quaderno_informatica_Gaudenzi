@@ -1,0 +1,39 @@
+/* un file css piuttosto che usare il tag style per rendere piu pulito il codice html */
+
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    box-sizing: border-box;    
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    width: 20%;
+}
+.button {
+    padding: 15px 30px;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+
+    background-color: #ede9e9;
+    border: 1px solid #4e4a4a;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #e0e0e0;
+}
+
+h1 {
+    margin-bottom: 30px;
+}

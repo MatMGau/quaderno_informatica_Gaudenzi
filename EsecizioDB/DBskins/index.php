@@ -2,7 +2,7 @@
 // Connessione al database
 $conn = new mysqli("localhost", "root", "", "skins");
 
-// Inserimento di un nuovo libro
+// Inserimento skin
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $prezzo = $_POST["prezzo"];
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->query("INSERT INTO skins ( nome, arma, prezzo, rarita) VALUES ('$titnomeolo', '$arma', '$prezzo', '$rarita')");
 }
 
-// Recupero dei libri dal database
+// Recupero dei skin da DB
 $result = $conn->query("SELECT * FROM skins");
 ?>
 

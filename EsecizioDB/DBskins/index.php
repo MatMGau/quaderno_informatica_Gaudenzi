@@ -94,7 +94,7 @@ $result = $conn->query("SELECT * FROM skins");
             <tbody>
                 <?php while ($row = $result->fetch_assoc()): ?>         
                 <tr>
-                    <td><?= $row["nome"] ?></td> <!-- Nome usato come ID -->
+                    <td><?= $row["nome"] ?></td> 
                     <td><?= $row["arma"] ?></td>
                     <td><?= $row["prezzo"] ?></td>
                     <td><?= $row["rarita"] ?></td>

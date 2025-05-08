@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>come intallare CMS</h1>
+    <br><br>
+    <p> <h3>Fase 1: Installazione CMS su XAMPP</h3> <br>
+        Prerequisiti:<br>
+        XAMPP Installato e Funzionante: Assicurati che XAMPP sia installato sul tuo PC. Avvia il Pannello di Controllo di XAMPP e assicurati che i moduli Apache e MySQL siano avviati (dovrebbero avere uno sfondo verde).
+        Procedura Generale (Comune a molti CMS):<br><br>
+        Download CMS: Scarica i file ZIP dei CMS scelti.<br>
+        WordPress (Obbligatorio): https://it.wordpress.org/download/<br>
+        Secondo CMS (Esempio: Joomla): https://downloads.joomla.org/it/ (o Drupal, ecc. - Shopify è diverso, vedi nota sotto).<br>
+        Creazione Cartella Progetto: Vai nella cartella htdocs di XAMPP (di solito C:\xampp\htdocs\ su Windows). Crea due cartelle separate per i tuoi CMS, ad esempio miowordpress e miojoomla.<br>
+        Estrazione File: Estrai il contenuto dei file ZIP scaricati all'interno delle rispettive cartelle create in htdocs. Assicurati che i file principali (come index.php, wp-config-sample.php per WordPress) siano direttamente dentro miowordpress e non in una sottocartella creata dall'estrazione.<br>
+        Creazione Database:<br>
+        Apri il browser e vai a http://localhost/phpmyadmin/.<br>
+        Clicca su "Nuovo" (o "Database") nel menu a sinistra.<br>
+        Inserisci un nome per il database del primo CMS (es. db_wordpress). Scegli una codifica come utf8mb4_general_ci e clicca "Crea".<br>
+        Ripeti l'operazione per il secondo CMS (es. db_joomla).<br>
+        Nota: Per ora usiamo l'utente root di MySQL senza password (default di XAMPP), che va bene per lo sviluppo locale ma non per un sito reale.<br>
+        Installazione via Browser:<br>
+        WordPress: Vai su http://localhost/miowordpress/ nel browser. Partirà l'installazione guidata. Ti chiederà:<br>
+        Nome database: db_wordpress<br>
+        Nome utente: root<br>
+        Password: (lascia vuoto)<br>
+        Host database: localhost<br>
+        Prefisso tabella: wp_ (puoi lasciarlo o cambiarlo)<br>
+        Segui i passaggi successivi per creare il tuo utente amministratore WordPress.<br>
+        Joomla (o altro CMS): Vai su http://localhost/miojoomla/. Anche qui partirà un'installazione guidata. I passaggi sono simili: dovrai fornire i dettagli del database (db_joomla, root, password vuota, localhost) e creare un utente amministratore. Segui le istruzioni a schermo.<br>
+        Nota su Shopify: Shopify è una piattaforma SaaS (Software as a Service) ospitata sui loro server. Non si installa su XAMPP come WordPress o Joomla. Se vuoi esplorare Shopify, dovrai creare un account di prova sul loro sito web. Per questo esercizio, scegli un CMS tradizionale come Joomla, Drupal, PrestaShop (se vuoi un e-commerce installabile), ecc. <br><br>
+
+        <h3>Fase 2: Ricerca Integrazione Plugin WordPress </h3> <br>
+        L'integrazione di plugin in WordPress è un processo che aggiunge nuove funzionalità o espande quelle esistenti al tuo sito WordPress. Per farlo, devi prima installare il plugin, poi attivarli e, infine, configurare le impostazioni personalizzate. <br>
+            Installazione del plugin:<br>
+            Accedi alla dashboard di WordPress: Vai al tuo pannello di amministrazione WordPress.
+            Vai a "Plugin" e "Aggiungi nuovo": Nel menu di sinistra, seleziona "Plugin" e poi "Aggiungi nuovo".
+            Cerca il plugin: Utilizza il campo di ricerca per trovare il plugin che desideri installare, ad esempio "ActiveCampaign - Moduli, monitoraggio del sito, chat dal vivo".
+            Installa e attiva: Clicca su "Installa ora" e poi su "Attiva" per completare l'installazione. 
+            Attivazione e configurazione:<br>
+            1. Attiva il plugin:<br>
+            Seleziona il plugin dal menu di sinistra e clicca sul pulsante "Attiva". <br>
+            2. Configura le impostazioni:<br>
+            Alcuni plugin richiedono ulteriori configurazioni, come l'inserimento di API key o l'impostazione di preferenze specifiche. <br>
+            3. Sincronizzazione con altri servizi <br>
+
+        Esempi di plugin e loro integrazione:<br>
+        HubSpot:<br>
+        Per integrare HubSpot con WordPress, puoi installare il plugin HubSpot. Dopo l'installazione, dovrai collegare il tuo account HubSpot e configurare le impostazioni del plugin. Puoi quindi incorporare contenuti di HubSpot, come moduli o contenuti, in pagine e articoli di WordPress utilizzando un shortcode. <br>
+        ActiveCampaign:<br>
+        Il plugin ActiveCampaign ti permette di integrare il tuo sito WordPress con ActiveCampaign, consentendoti di creare moduli di iscrizione, monitorare il comportamento degli utenti e utilizzare la chat dal vivo. Per utilizzare il plugin, devi prima installarlo e poi collegare il tuo account ActiveCampaign. <br>
+        Iubenda:<br>
+        Questo plugin aiuta a garantire la conformità GDPR/CCPA e consente la creazione di cookie policy, cookie consent e altro. 
+
+
+
+
+      <br>
+        <h3>Fase 3: Ricerca Design Pattern IAM e Autenticazione</h3> <br>
+        I Design Pattern sono soluzioni riutilizzabili per problemi comuni nella progettazione software, e possono essere applicati anche nell'ambito di Identity and Access Management (IAM) .<br>
+        <br>
+        Utile negli ambiti: <br>
+<br>
+        Identità Digitali: Chi sono gli utenti, i servizi, le applicazioni.<br>
+
+        Autenticazione: Come si verifica l'identità (chi sei?).<br>
+
+        Autorizzazione: Cosa è permesso fare a un'identità autenticata (cosa puoi fare?).<br>
+
+        Amministrazione: Come vengono gestite le identità, i permessi e le policy. <br>
+<br>
+        Vantaggi dell'uso dei Design Pattern in IAM: <br>
+        <br>
+        Flessibilità: Rendono il sistema più flessibile e facile da estendere.<br>
+        Riutilizzabilità: Consente la riutilizzazione del codice in diversi contesti.<br>
+        Manutenzione: Rendono il codice più facile da mantenere e da aggiornare.<br>
+        Scalabilità: Consentono la scalabilità del sistema senza modificare radicalmente la sua architettura.<br>
+
+        1. Factory Method <br>
+        Problema: <br>
+        Creazione di oggetti di autenticazione o gestione identità diversi in base a fattori come il tipo di utente, il metodo di autenticazione o la piattaforma.<br>
+        Soluzione:<br>
+        Usare un Factory Method per delegare la creazione di questi oggetti, in modo da rendere il codice più flessibile e meno ripetitivo.<br>
+        Esempio:<br>    
+        Creare un'interfaccia per una factory di autenticazione e poi implementazioni specifiche per autenticazione con username/password, autenticazione con token, autenticazione con email, ecc. <br>
+
+         <br>
+        <h3> Fase 4: Aggiornamento "Quaderno d'Informatica" (Progetto Personale)</h3> <br>
+        Obiettivo: Creare una pagina "installazione" per il tuo progetto web che prepari il database prima di accedere al sito vero e proprio.<br>
+        Logica da Implementare:<br>
+        Pagina di Benvenuto/Controllo (setup_check.php o simile):<br>
+        Questa pagina viene caricata per prima.<br>
+        Controlla se l'installazione è già stata completata (es. controllando l'esistenza di una tabella specifica nel DB o un file di configurazione creato alla fine del setup).<br>
+        Se l'installazione è completa, reindirizza (header('Location: index.php'); exit;) alla home page normale.<br>
+        Se l'installazione NON è completa, mostra un messaggio di benvenuto e un pulsante/link "Installa Database".<br>
+        Script di Installazione (install_db.php o simile):<br>
+        Questo script viene eseguito quando l'utente clicca il pulsante "Installa Database".<br>
+        NON dovrebbe mostrare HTML complesso, ma eseguire operazioni e magari dare feedback.<br>
+        Passaggi Fondamentali (da eseguire in sequenza):<br>
+        (Opzionale ma consigliato) Connessione Iniziale: Tentare una connessione a MySQL (localhost, root, password vuota) per assicurarsi che MySQL sia in esecuzione. Gestire eventuali errori.<br>
+        Creazione Database: Eseguire la query CREATE DATABASE IF NOT EXISTS nome_tuo_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;. L'IF NOT EXISTS lo rende sicuro da eseguire più volte. Controllare l'esito.<br>
+        Selezione Database: Eseguire USE nome_tuo_db; o riconnettersi specificando il database, in modo che le query successive operino su di esso.</p>
+</body>
+</html>
